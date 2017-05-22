@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body,
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        #buttonBack2 {
+            position: absolute;
+            width: 300px;
+            top: 640px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: 0 auto;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+        
+        #buttonBack2 p {
+            position: absolute;
+            top: 6px;
+            font-size: 30px;
+            color: #6b6b6b;
+            left: 79px;
+            font-family: sans-serif;
+        }
+        
+        #buttonBack1 {
+            position: absolute;
+            width: 300px;
+            top: 640px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: 0 auto;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+        
+        #buttonBack1 p {
+            position: absolute;
+            top: 10px;
+            font-size: 22px;
+            color: #6b6b6b;
+            left: 59px;
+            font-family: sans-serif;
+        }
+        
+        .parallax {
+            background-image: url('page1background.png');
+            height: 101%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        
+        #logoMain img {
+            position: absolute;
+            width: 400px;
+            top: 130px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: 0 auto;
+        }
+        
+        #highballsTitleImg img {
+            position: absolute;
+            width: 400px;
+            top: 30px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: 0 auto;
+        }
+        
+        #form {
+            font-size: 30px;
+            position: absolute;
+            text-align: center;
+            width: 400px;
+            top: 540px;
+            left: 10px;
+            right: 0px;
+            bottom: 0px;
+            margin: 0 auto;
+            color: #6b6b6b;
+            font-family: sans-serif;
+        }
+        
+        #form input {
+            margin-top: 12px;
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+            color: #6b6b6b;
+            font-family: sans-serif;
+        }
+        
+        #FormBackgroundImg img {
+            position: absolute;
+            width: 400px;
+            top: 500px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: 0 auto;
+        }
+        
+        #highballsTitle {
+            position: absolute;
+            font-size: 55px;
+            width: 10px;
+            top: 38px;
+            left: -300px;
+            right: 0px;
+            bottom: 0px;
+            margin: 0 auto;
+            color: #6b6b6b;
+            font-family: sans-serif;
+        }
+        
+        @media screen and (max-width: 430px) {
+            body,
+            html {
+                height: 100%;
+            }
+            .parallax {
+                background-image: url('page1background.png');
+                height: 101%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #buttonBack1 {
+                top: 550px;
+            }
+            #buttonBack2 {
+                top: 550px;
+            }
+            #logoMain img {
+                position: absolute;
+                width: 300px;
+                top: 140px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+            }
+            #highballsTitleImg img {
+                position: absolute;
+                width: 350px;
+                top: 30px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+            }
+            #form {
+                font-size: 26px;
+                position: absolute;
+                text-align: center;
+                width: 400px;
+                top: 460px;
+                left: 10px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+            }
+            #FormBackgroundImg img {
+                position: absolute;
+                width: 350px;
+                top: 430px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+            }
+            #highballsTitle {
+                position: absolute;
+                font-size: 48px;
+                width: 10px;
+                top: 38px;
+                left: -260px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="parallax">
+
+        <div id='highballsTitleImg'>
+            <img src='titlebackground.png'>
+        </div>
+
+        <div id='highballsTitle'>HIGHBALLS</div>
+
+        <div id='FormBackgroundImg'>
+            <img src='formbackground.png'>
+
+            <div id='form'>
+
+                <form>
+                    ENTER YOUR BIRTHDAY
+                    <br>
+                    <input type="date" id="date" value="date" onblur="getAge()">
+                    <br>
+                </form>
+
+            </div>
+        </div>
+
+        <div id='logoMain'>
+            <img src='logomain.png'>
+        </div>
+
+        <div id='buttonBack2'>
+            <a href='index2.html'>
+                <p>OPEN APP</p>
+                <img src='EObackgroundBut.svg'></a>
+        </div>
+
+        <div id='buttonBack1'>
+            <p>I AM 19 OR OLDER</p>
+            <img src='EObackgroundBut.svg'>
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        function getAge() {
+            var dateString = document.getElementById("date").value;
+
+            if (dateString != "") {
+
+                var today = new Date();
+                var birthDate = new Date(dateString);
+
+                var age = today.getFullYear() - birthDate.getFullYear();
+
+                var da = today.getDate() - birthDate.getDate();
+
+                var m = today.getMonth() - birthDate.getMonth();
+
+
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+
+                if (m > 12) {
+                    alert("bro theres only 12 months in a year");
+
+                }
+
+                if (da > 31) {
+                    alert("bro theres only 31 days max in a month")
+
+                }
+
+                if (age < 19) {
+                    alert("Sorry you're only " + age + "!");
+
+                } else {
+                    var button1 = document.getElementById('buttonBack1');
+                    button1.style.display = 'none';
+
+                }
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        
+        /*CSS FOR ALL PAGES*/
+        
+        #header1 {
+            position: absolute;
+            background-color: #FFF;
+            width: 100%;
+            height: 110px;
+            margin-top: -8px;
+            margin-left: -8px;
+            z-index: 1;
+            font-family: sans-serif;
+        }
+        
+        #title1 {
+            font-size: 60px;
+            color: #6b6b6b;
+            float: left;
+            margin-left: 30px;
+            margin-top: 20px;
+            font-family: sans-serif;
+        }
+        
+        body,
+        html {
+            background-color: #e0e0e0;
+        }
+        
+        #one img {
+            float: right;
+            margin-right: 40px;
+            margin-top: 23px;
+            width: 62px;
+        }
+        
+        #two img {
+            float: right;
+            margin-right: 47px;
+            margin-top: 11px;
+            width: 87px;
+        }
+        
+        #three img {
+            float: right;
+            margin-right: 40px;
+            margin-top: 18px;
+            width: 70px;
+        }
+        
+        #body {
+            position: absolute;
+            width: 98%;
+            height: 495px;
+            margin-top: 193px;
+        }
+        
+        #leftAlign {
+            position: absolute;
+            width: 450px;
+            height: 540px;
+            background-color: #e0e0e0;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: -10px;
+            background-color: #FFF;
+            width: 100%;
+            height: 40px;
+            margin-left: -8px;
+            padding-top: 12px;
+            text-align: center;
+            color: #6b6b6b;
+            font-family: sans-serif;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*CSS FOR INFO PAGE*/
+        
+        #header2info {
+            position: absolute;
+            background-color: #FFF;
+            width: 100%;
+            height: 65px;
+            margin-top: 115px;
+            margin-left: -7px;
+        }
+        
+        #title2info {
+            font-size: 30px;
+            text-align: center;
+            color: #6b6b6b;
+            margin-top: 15px;
+            font-family: sans-serif;
+        }
+        
+        #body1info {
+            position: absolute;
+            width: 98%;
+            height: 495px;
+            background-color: #FFF;
+            margin-top: 193px;
+        }
+        
+        #randomButinfo {
+            position: absolute;
+            margin-left: 65px;
+            margin-top: 30px;
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            color: #6b6b6b;
+            background-color: #FFF;
+            border: 0px solid;
+            border-radius: 25px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        #randomButinfo:focus {
+            outline: 0;
+        }
+        
+        #randomButinfo:hover {
+            background-color: #FCCE08;
+        }
+        
+        #buyButinfo {
+            position: absolute;
+            margin-left: 65px;
+            margin-top: 100px;
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            color: #6b6b6b;
+            background-color: #FFF;
+            border: 0px solid;
+            border-radius: 25px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        #buyButinfo:focus {
+            outline: 0;
+        }
+        
+        #buyButinfo:hover {
+            background-color: #FCCE08;
+        }
+        
+        #rightAligninfo {
+            position: relative;
+            float: right;
+            margin-right: 0px;
+            width: 58%;
+        }
+        
+        #randomizeinfo {
+            position: absolute;
+            width: 96%;
+            margin-top: 100px;
+        }
+        
+        #infoImg {
+            position: absolute;
+            width: 240px;
+            margin-left: 30%;
+            margin-top: -68px;
+        }
+        
+        #img1 img {
+            position: absolute;
+            width: 240px;
+            margin-left: 30%;
+            margin-top: -68px;
+        }
+        
+        #drinkImg img {
+            position: absolute;
+            width: 350px;
+            margin-top: 190px;
+            margin-left: 40px;
+        }
+        
+        #result {
+            position: absolute;
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 22px;
+            color: #6b6b6b;
+            width: 242px;
+            top: 320px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*CSS FOR PREFERENCE PAGE*/
+        
+        #fixed {
+            position: absolute;
+            margin-left: 10%;
+        }
+        
+        #header2pref {
+            position: absolute;
+            background-color: #FFF;
+            width: 100%;
+            height: 65px;
+            margin-top: 115px;
+            margin-left: -7px;
+        }
+        
+        #title2pref {
+            font-size: 30px;
+            text-align: center;
+            color: #6b6b6b;
+            margin-top: 15px;
+            font-family: sans-serif;
+        }
+        
+        #rightAlignPref {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            right: 0px;
+            bottom: 50px;
+            margin: 10 auto;
+            width: 50%;
+            height: 0px;
+        }
+        
+        #myBtn2 {
+            position: absolute;
+            margin-left: 65px;
+            margin-top: 30px;
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            color: #6b6b6b;
+            background-color: #FFF;
+            border: 0px solid;
+            border-radius: 25px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        #myBtn2:focus {
+            outline: 0;
+        }
+        
+        #myBtn2:hover {
+            background-color: #FCCE08;
+        }
+        
+        #buyBut {
+            position: absolute;
+            margin-left: 65px;
+            margin-top: 100px;
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            color: #6b6b6b;
+            background-color: #FFF;
+            border: 0px solid;
+            border-radius: 25px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        #buyBut:focus {
+            outline: 0;
+        }
+        
+        #buyBut:hover {
+            background-color: #FCCE08;
+        }
+        
+        #drinkLink {
+            margin-top: 10px;
+            width: 150px;
+            height: 30px;
+            font-size: 14px;
+            text-align: center;
+            color: #6b6b6b;
+            background-color: #FFF;
+            border: 0px solid;
+            border-radius: 25px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: -10px;
+            background-color: #FFF;
+            width: 100%;
+            height: 40px;
+            margin-left: -8px;
+            padding-top: 12px;
+            text-align: center;
+            color: #6b6b6b;
+            font-family: sans-serif;
+        }
+        
+        #button1 {
+            padding: 35px 35px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: grey;
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        
+        #button1:hover {
+            background-color: white
+        }
+        
+        #button1:active {
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+            transition: 0.12s;
+        }
+        
+        #button2 {
+            padding: 35px 40px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: grey;
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        
+        #button2:hover {
+            background-color: white
+        }
+        
+        #button2:active {
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+            transition: 0.12s;
+        }
+        
+        #button3 {
+            margin-top: 10%;
+            padding: 35px 40px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: grey;
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        
+        #button3:hover {
+            background-color: white
+        }
+        
+        #button3:active {
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+            transition: 0.12s;
+        }
+        
+        #button4 {
+            margin-top: 10%;
+            padding: 35px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: grey;
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        
+        #button4:hover {
+            background-color: white
+        }
+        
+        #button4:active {
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+            transition: 0.12s;
+        }
+        
+        #button6 {
+            margin-top: 10%;
+            padding: 35px 35px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: grey;
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        
+        #button6:hover {
+            background-color: white;
+        }
+        
+        #button6:active {
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+            transition: 0.12s;
+        }
+        
+        #button5 {
+            margin-top: 0%;
+            padding: 35px 35px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: grey;
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        
+        #button5:hover {
+            background-color: white
+        }
+        
+        #button5:active {
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+            transition: 0.12s;
+        }
+         
+        #popup {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            padding-top: 40px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        #modalContent {
+            position: relative;
+            margin: auto;
+            padding: 0;
+            width: 80%;
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+        
+        #modalBox {
+            padding-top: 20%;
+            padding-bottom: 20%;
+            height: 200px;
+            text-align: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: #e0e0e0;
+            color: white;
+            border-radius: 25px;
+        }
+        
+        @-webkit-keyframes animatetop {
+            from {
+                top: -500px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+        
+        @keyframes animatetop {
+            from {
+                top: -500px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+        
+        .closePref {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .closePref:hover,
+        .closePref:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        #closeButHolder {
+            padding-left: 0px;
+            padding-right: 20px;
+            color: white;
+        }
+        
+        #strenghtPopup {
+            position: absolute;
+            font-size: 30px;
+            font-family: sans-serif;
+            top: 56px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 100%;
+            height: 30px;
+        }
+        
+        #liquorPopup {
+            position: absolute;
+            left: 11%;
+            top: 115px;
+            width: 13%;
+            height: 30px;
+        }
+        
+        #garnishPopup {
+            position: absolute;
+            top: 220px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 25%;
+            height: 30px;
+        }
+        
+        #popPopup {
+            position: absolute;
+            left: 72%;
+            top: 175px;
+            width: 17%;
+            height: 30px;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*CSS FOR RANDOMIZE PAGE*/
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 150px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        .modal-content {
+            position: relative;
+            margin: auto;
+            padding: 0;
+            width: 80%;
+            font-family: sans-serif;
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+        
+        @-webkit-keyframes animatetop {
+            from {
+                top: -500px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+        
+        @keyframes animatetop {
+            from {
+                top: -500px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+        
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .modal-header {
+            padding-left: 0px;
+            padding-right: 20px;
+            color: white;
+        }
+        
+        .modal-footer {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: #FCCE08;
+            color: white;
+            border-radius: 25px;
+        }
+        
+        #liquorBut {
+            border: 0px solid;
+            border-radius: 25px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        #liquorBut:focus {
+            outline: 0;
+        }
+        
+        #garnishBut {
+            border: 0px solid;
+            border-radius: 25px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        #garnishBut:focus {
+            outline: 0;
+        }
+        
+        #popBut {
+            border: 0px solid;
+            border-radius: 25px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        #popBut:focus {
+            outline: 0;
+        }
+        
+        #header2 {
+            position: absolute;
+            background-color: #FFF;
+            width: 100%;
+            height: 65px;
+            margin-top: 115px;
+            margin-left: -7px;
+            font-family: sans-serif;
+        }
+        
+        #title2 {
+            font-size: 30px;
+            text-align: center;
+            color: #6b6b6b;
+            margin-top: 15px;
+            font-family: sans-serif;
+        }
+        
+        #rightAlign {
+            position: relative;
+            float: right;
+            margin-right: 0px;
+            width: 58%;
+            background-color: #e0e0e0;
+        }
+        
+        #randomize {
+            position: absolute;
+            width: 96%;
+            margin-top: 100px;
+        }
+        
+        #drinkImg img {
+            position: absolute;
+            width: 350px;
+            margin-top: 190px;
+            margin-left: 40px;
+        }
+        
+        #drinkLink {
+            margin-top: 10px;
+            width: 150px;
+            height: 30px;
+            font-size: 14px;
+            text-align: center;
+            color: #6b6b6b;
+            background-color: #FFF;
+            border: 0px solid;
+            border-radius: 25px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        #randomBut {
+            position: absolute;
+            margin-left: 65px;
+            margin-top: 30px;
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            color: #6b6b6b;
+            background-color: #FFF;
+            border: 0px solid;
+            border-radius: 25px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        #randomBut:focus {
+            outline: 0;
+        }
+        
+        #randomBut:hover {
+            background-color: #FCCE08;
+        }
+        
+        #myBtn {
+            position: absolute;
+            margin-left: 65px;
+            margin-top: 100px;
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            color: #6b6b6b;
+            background-color: #FFF;
+            border: 0px solid;
+            border-radius: 25px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        #myBtn:focus {
+            outline: 0;
+        }
+        
+        #myBtn:hover {
+            background-color: #FCCE08;
+        }
+        
+        #liquorBut:hover {
+            background-color: #FCCE08;
+        }
+        
+        #garnishBut:hover {
+            background-color: #FCCE08;
+        }
+        
+        #popBut:hover {
+            background-color: #FCCE08;
+        }
+        
+        #liquorBut {
+            position: absolute;
+            margin-left: 0%;
+            margin-top: 30px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            color: #6b6b6b;
+            background-color: #fff;
+            border: 0px solid;
+            border-radius: 25px;
+        }
+        
+        #garnishBut {
+            position: absolute;
+            margin-left: 33%;
+            margin-top: 30px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            color: #6b6b6b;
+            background-color: #fff;
+            border: 0px solid;
+            border-radius: 25px;
+        }
+        
+        #popBut {
+            position: absolute;
+            margin-left: 66%;
+            margin-top: 30px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            color: #6b6b6b;
+            background-color: #fff;
+            border: 0px solid;
+            border-radius: 25px;
+        }
+        
+        #liquorImg {
+            position: absolute;
+            width: 100px;
+            margin-left: 7%;
+            margin-top: 0px;
+        }
+        
+        #garnishImg {
+            position: absolute;
+            width: 200px;
+            margin-left: 34%;
+            margin-top: 100px;
+        }
+        
+        #popImg {
+            position: absolute;
+            width: 130px;
+            margin-left: 73%;
+            margin-top: 80px;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        @media screen and (max-width: 1110px) {
+            
+            /*ALL PAGES*/
+            footer {
+                display: none;
+            }
+            #leftAlign {
+                display: none;
+            }
+            #title1 {
+                display: none;
+            }
+            #header1 {
+                position: absolute;
+                bottom: 0;
+            }
+            #header2 {
+                margin-top: 0px;
+            }
+            #one img {
+                position: absolute;
+                top: 24px;
+                left: 300px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 62px;
+            }
+            #two img {
+                position: absolute;
+                top: 12px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 87px;
+            }
+            #three img {
+                position: absolute;
+                top: 18px;
+                left: -300px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 70px;
+            }
+            #body {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 100%;
+                height: 0px;
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            /*CSS FOR INFO PAGE*/
+            
+            #header2info {
+                margin-top: 0px;
+            }
+            #body1info {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 100%;
+                height: 0px;
+            }
+            #randomButinfo {
+                position: absolute;
+                top: 430px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+                text-align: center;
+                color: #6b6b6b;
+                background-color: #FFF;
+                border: 0px solid;
+                border-radius: 25px;
+            }
+            #buyButinfo {
+                position: absolute;
+                top: 490px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+                text-align: center;
+                color: #6b6b6b;
+                background-color: #FFF;
+                border: 0px solid;
+                border-radius: 25px;
+            }
+            #randomizeinfo {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 100%;
+                height: 0px;
+            }
+            #rightAligninfo {
+                position: absolute;
+                top: 100px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 100%;
+                height: 0px;
+            }
+            #infoImg {
+                top: -15px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 160px;
+            }
+            #img1 img {
+                top: -5px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 160px;
+            }
+            
+            #result {
+            top: 282px;
+        }
+            
+            
+            
+            
+            
+            
+            
+            
+            /*PREFERENCE PAGE*/
+            
+            #fixed {
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 260px;
+            }
+            #button1 {
+                padding: 25px 25px;
+                font-size: 24px;
+            }
+            #button2 {
+                padding: 25px 30px;
+                font-size: 24px;
+            }
+            #button3 {
+                margin-top: 10%;
+                padding: 25px 30px;
+            }
+            #button4 {
+                margin-top: 10%;
+                padding: 25px 15px;
+            }
+            #button6 {
+                margin-top: 10%;
+                padding: 25px 25px;
+            }
+            #button5 {
+                margin-top: 0%;
+                padding: 25px 25px;
+            }
+            #header2pref {
+                margin-top: 0px;
+            }
+            #myBtn2 {
+                position: absolute;
+                top: 430px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+                text-align: center;
+                color: #6b6b6b;
+                background-color: #FFF;
+                border: 0px solid;
+                border-radius: 25px;
+            }
+            #buyBut {
+                position: absolute;
+                top: 490px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+                text-align: center;
+                color: #6b6b6b;
+                background-color: #FFF;
+                border: 0px solid;
+                border-radius: 25px;
+            }
+            #rightAlignPref {
+                position: absolute;
+                top: 100px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 100%;
+                height: 0px;
+            }
+            
+            #popup {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            padding-top: 90px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        #modalBox {
+            padding-top: 20%;
+            padding-bottom: 20%;
+            height: 200px;
+        }
+        
+        #strenghtPopup {
+            top: 56px;
+        }
+        
+        #liquorPopup {
+            top: 115px;
+            width: 15%;
+        }
+        
+        #garnishPopup {
+            top: 160px;
+            width: 25%;
+        }
+        
+        #popPopup {
+            left: 72%;
+            top: 145px;
+            width: 17%;
+        }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            /*RANDOMIZER PAGE*/
+            
+            #liquorImg {
+                top: 60px;
+                left: -270px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 65px;
+            }
+            #garnishImg {
+                top: 120px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 120px;
+            }
+            #popImg {
+                top: 90px;
+                left: 270px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 90px;
+            }
+            #randomBut {
+                position: absolute;
+                top: 430px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+                text-align: center;
+                color: #6b6b6b;
+                background-color: #FFF;
+                border: 0px solid;
+                border-radius: 25px;
+            }
+            #myBtn {
+                position: absolute;
+                top: 490px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+                text-align: center;
+                color: #6b6b6b;
+                background-color: #FFF;
+                border: 0px solid;
+                border-radius: 25px;
+            }
+            #randomize {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 100%;
+                height: 0px;
+            }
+            #rightAlign {
+                position: absolute;
+                top: 100px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 100%;
+                height: 0px;
+            }
+            #liquorBut {
+                position: absolute;
+                top: -15px;
+                left: -270px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 120px;
+                font-size: 18px;
+                background-color: #FFF;
+            }
+            #garnishBut {
+                position: absolute;
+                top: -15px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 120px;
+                font-size: 18px;
+                background-color: #FFF;
+            }
+            #popBut:focus {
+                outline: 0;
+            }
+            #buyBut:focus {
+                outline: 0;
+            }
+            #liquorBut:focus {
+                outline: 0;
+            }
+            #garnishBut:focus {
+                outline: 0;
+            }
+            #randomBut:focus {
+                outline: 0;
+            }
+            #popBut {
+                position: absolute;
+                top: -15px;
+                left: 270px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0 auto;
+                width: 120px;
+                font-size: 18px;
+                background-color: #FFF;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+   
+    <!--ALL PAGES-->
+
+    <header id='header1'>
+        <a href='index.html'>
+            <div id='title1'>
+                HIGHBALLS
+            </div>
+        </a>
+        <div id='one'>
+            <img src='infographicicon.svg'>
+        </div>
+        <div id='two'>
+            <img src='mixdrinkicon.svg'>
+        </div>
+        <div id='three'>
+            <img src='settingsicon.svg'>
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--INFO PAGE-->
+
+    <div id=infoPage>
+        <header id='header2info'>
+            <div id='title2info'>DRINK UP</div>
+        </header>
+
+        <div id='body1info'>
+
+            <div id='leftAlign'>
+                <div id='drinkImg'><img src='logomain.png'></div>
+            </div>
+
+            <button id='randomButinfo' onclick="clickCounter()">FINISHED A DRINK</button>
+            
+            <button id='buyButinfo'>RESET DRINKS</button>
+
+            <div id='rightAligninfo'>
+                <div id='randomizeinfo'>
+                   <div id="result"></div>
+                    <div id='infoImg'></div>
+                    <div id=img1><img src='1info.svg'></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+     
+      
+       
+        
+         
+          
+           
+     <!--PREFERENCE PAGE-->
+
+    <div id='prefPage'>
+
+    <div id='popup'>
+        <div id="modalContent">
+            <div id="closeButHolder">
+                <span class="closePref">&times;</span>
+            </div>
+            <div id='modalBox'>
+                <div id=strenghtPopup>SET YOUR PREFERENCES FIRST!</div>
+                <div id=liquorPopup><img id='liquorPopupImg' src=''></div>
+                <div id=garnishPopup><img id='garnishPopupImg' src=''></div>
+                <div id=popPopup><img id='popPopupImg' src=''></div>
+
+            </div>
+        </div>
+
+    </div>
+      
+      
+       
+        <header id='header2pref'>
+            <div id='title2pref'>PREFERENCES</div>
+        </header>
+
+        <div id='body'>
+            <div id='leftAlign'>
+                <div id='drinkImg'><img src='logomain.png'></div>
+            </div>
+
+            <button id='myBtn2' onmousedown="mouseDownclear2()" onmouseup="mouseUpclear2()">SET PREFRENCES</button>
+
+
+            <button id='buyBut' onmousedown="mouseDownclear()" onmouseup="mouseUpclear()">CLEAR PREFRENCES</button>
+            <div id='rightAlignPref'>
+
+                <div id=fixed>
+
+                    <div>
+                        <button id="button1">SWEET</button>
+                        <button id="button2">SOUR</button>
+                    </div>
+                    <div>
+                        <button id="button3">WEAK </button>
+                        <button id="button4">STRONG</button>
+                    </div>
+                    <div>
+                        <button id="button5">CHEAP</button>
+                        <button id="button6">PRICEY</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--RANDOMIZER PAGE-->
+
+    <div id='randomPage'>
+        <header id='header2'>
+            <div id='title2'>MIX YOUR DRINK</div>
+        </header>
+
+
+
+        <div id='body'>
+
+            <div id='leftAlign'>
+                <div id='drinkImg'><img src='logomain.png'></div>
+            </div>
+
+            <button id='randomBut' onmousedown="mouseDownran()" onmouseup="mouseUpran()">RANDOMIZE</button>
+
+            <button id="myBtn">BUY DRINK</button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-footer">
+                        YOUR DRINK HAS BEEN SENT TO THE BAR! IT WILL BE UP IN A FEW MINUTES.
+                        <br>
+                        <br> KEEP TRACK OF YOUR DRINKS HERE
+                        <br>
+                        <button id='drinkLink'>DRINK TRACKER</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id='rightAlign'>
+                <button id='liquorBut' onmousedown="mouseDownliq()" onmouseup="mouseUpliq()">LIQUOR</button>
+                <button id='garnishBut' onmousedown="mouseDowngarn()" onmouseup="mouseUpgarn()">GARNISH</button>
+                <button id='popBut' onmousedown="mouseDownpop()" onmouseup="mouseUppop()">POP / JUICE</button>
+
+
+                <div id='randomize'>
+                    <div><img id='liquorImg' src='rum.svg'></div>
+                    <div><img id='garnishImg' src='lemon.svg'></div>
+                    <div><img id='popImg' src='tonic.svg'></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <footer>CHECK US OUT IN THE APP STORE</footer>
+
+    <script>
+        
+        //ALL PAGES
+
+        var openInfoPg = document.getElementById('one');
+        var openRandomPg = document.getElementById('two');
+        var openPrefPg = document.getElementById('three');
+        var infoPage = document.getElementById('infoPage');
+        var randomPage = document.getElementById('randomPage');
+        var prefPage = document.getElementById('prefPage');
+
+        prefPage.style.display = 'none';
+        infoPage.style.display = 'none';
+
+        openRandomPg.addEventListener('click', function () {
+            randomPage.style.display = 'block';
+            randomPage.style.zIndex = '-9';
+            prefPage.style.display = 'none';
+            prefPage.style.zIndex = '-10';
+            infoPage.style.display = 'none';
+            infoPage.style.zIndex = '-11';
+
+        })
+
+
+        openPrefPg.addEventListener('click', function () {
+            randomPage.style.display = 'none';
+            randomPage.style.zIndex = '-10';
+            prefPage.style.display = 'block';
+            prefPage.style.zIndex = '-9';
+            infoPage.style.display = 'none';
+            infoPage.style.zIndex = '-11';
+
+        })
+
+        openInfoPg.addEventListener('click', function () {
+            randomPage.style.display = 'none';
+            randomPage.style.zIndex = '-10';
+            prefPage.style.display = 'none';
+            prefPage.style.zIndex = '-9';
+            infoPage.style.display = 'block';
+            infoPage.style.zIndex = '-8';
+
+        })
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //INFO PAGE
+        
+        var finishBut = document.getElementById('randomButinfo');
+        var infoImgDiv = document.getElementById('infoImg');
+        var img1 = document.getElementById('img1');
+        var reset = document.getElementById('buyButinfo');
+        var infoImg = document.createElement('img');
+        var numClicks = 0;
+
+        reset.addEventListener('click', function () {
+            numClicks = 0;
+            localStorage.clear();
+
+            img1.style.display = 'block';
+            infoImg.style.display = 'none';
+
+        })
+
+
+
+        finishBut.addEventListener('click', function () {
+            numClicks++;
+
+            console.log('clicked');
+            img1.style.display = 'none';
+
+            if (numClicks == 1) {
+
+                infoImg.style.display = 'block';
+                infoImg.src = '2info.svg';
+                infoImg.style.position = 'absolute';
+                infoImg.style.top = "10px";
+                infoImg.style.left = "2px";
+
+                infoImgDiv.appendChild(infoImg);
+
+            }
+
+            if (numClicks == 2) {
+
+                infoImg.style.display = 'block';
+                infoImg.src = '3info.svg';
+                infoImg.style.position = 'absolute';
+                infoImg.style.top = "10px";
+                infoImg.style.left = "3px";
+
+                infoImgDiv.appendChild(infoImg);
+
+            }
+
+            if (numClicks == 3) {
+
+                infoImg.style.display = 'block';
+                infoImg.src = '4info.svg';
+                infoImg.style.position = 'absolute';
+                infoImg.style.top = "10px";
+                infoImg.style.left = "4px";
+
+                infoImgDiv.appendChild(infoImg);
+
+            }
+
+            if (numClicks == 4) {
+
+                infoImg.style.display = 'block';
+                infoImg.src = '5info.svg';
+                infoImg.style.position = 'absolute';
+                infoImg.style.top = "10px";
+                infoImg.style.left = "5px";
+
+                infoImgDiv.appendChild(infoImg);
+
+            }
+
+            if (numClicks == 5) {
+
+                infoImg.style.display = 'block';
+                infoImg.src = '6info.svg';
+                infoImg.style.position = 'absolute';
+                infoImg.style.top = "10px";
+                infoImg.style.left = "6px";
+
+                infoImgDiv.appendChild(infoImg);
+
+            }
+
+
+
+        })
+        
+        function clickCounter() {
+            
+        if(typeof(Storage) !== "undefined") {
+            
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            
+            localStorage.clickcount = 1;
+        }
+            
+        document.getElementById("result").innerHTML = "YOU'VE HAD " + localStorage.clickcount + " DRINKS";
+        
+        } else {
+            
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage.";
+            }
+            
+            
+            
+        }
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        //PREFERENCE PAGE
+        var popup = document.getElementById('popup');
+        var setBtn = document.getElementById('myBtn2');
+        var closePref = document.getElementsByClassName('closePref')[0];
+
+        setBtn.onclick = function () {
+            popup.style.display = "block";
+        }
+
+
+        closePref.onclick = function () {
+            popup.style.display = "none";
+        }
+
+
+        window.onclick = function (event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        }
+        
+
+        function mouseDownclear() {
+            document.getElementById("buyBut").style.backgroundColor = "#FCCE08";
+        }
+
+        function mouseUpclear() {
+            document.getElementById("buyBut").style.backgroundColor = "white";
+        }
+
+        function mouseDownclear2() {
+            document.getElementById("myBtn2").style.backgroundColor = "#FCCE08";
+        }
+
+        function mouseUpclear2() {
+            document.getElementById("myBtn2").style.backgroundColor = "white";
+        }
+
+
+
+        var button1 = document.getElementById("button1");
+        var button2 = document.getElementById("button2");
+        var button3 = document.getElementById("button3");
+        var button4 = document.getElementById("button4");
+        var button5 = document.getElementById("button5");
+        var button6 = document.getElementById("button6");
+        var buy = document.getElementById("buyBut");
+        
+        var liqourPopup = document.getElementById('liquorPopupImg');
+        var garnishPopup = document.getElementById('garnishPopupImg');
+        var popPopup = document.getElementById('popPopupImg');
+        var strenghtPopup = document.getElementById('strenghtPopup');
+        
+        var priceyDrink = ["scoth.svg", "tequila.svg", "gin.svg"],
+            cheapDrink = ["vodka.svg", "whisky.svg", "rum.svg"],
+            sourGarn = ["lime.svg", "lemon.svg"],
+            sweetGarn = ["orange.svg"],
+            sourPop = ["tonic.svg", "sodawater.svg"],
+            sweetPop = ["coke.svg", "sprite.svg", "gingerale.svg"];
+
+
+        button1.addEventListener("click", function () {
+            button1.style.backgroundColor = "#FCCE08";
+            button2.style.backgroundColor = "";
+            
+            
+            var randNum = Math.floor(Math.random() * sweetGarn.length) + 0
+            garnishPopup.src = sweetGarn[randNum];
+            var randNum2 = Math.floor(Math.random() * sweetPop.length) + 0
+            popPopup.src = sweetPop[randNum];
+            
+            
+        });
+        button2.addEventListener("click", function () {
+            button2.style.backgroundColor = "#FCCE08";
+            button1.style.backgroundColor = "";
+            
+            var randNum = Math.floor(Math.random() * sourGarn.length) + 0
+            garnishPopup.src = sourGarn[randNum];
+            var randNum2 = Math.floor(Math.random() * sourPop.length) + 0
+            popPopup.src = sourPop[randNum];
+            
+        });
+        button3.addEventListener("click", function () {
+            button3.style.backgroundColor = "#FCCE08";
+            button4.style.backgroundColor = "";
+            
+            strenghtPopup.innerHTML = 'SINGLE SHOT';
+            
+        });
+        button4.addEventListener("click", function () {
+            button4.style.backgroundColor = "#FCCE08";
+            button3.style.backgroundColor = "";
+            
+           strenghtPopup.innerHTML = 'DOUBLE SHOT';
+            
+        });
+        button5.addEventListener("click", function () {
+            button5.style.backgroundColor = "#FCCE08";
+            button6.style.backgroundColor = "";
+            
+            var randNum = Math.floor(Math.random() * cheapDrink.length) + 0
+            liqourPopup.src = cheapDrink[randNum];
+    
+        });
+        button6.addEventListener("click", function () {
+            button6.style.backgroundColor = "#FCCE08";
+            button5.style.backgroundColor = "";
+            
+            var randNum = Math.floor(Math.random() * priceyDrink.length) + 0
+            liqourPopup.src = priceyDrink[randNum];
+            
+        });
+
+        buy.addEventListener("click", function () {
+
+            button1.style.backgroundColor = "white";
+            button2.style.backgroundColor = "white";
+            button3.style.backgroundColor = "white";
+            button4.style.backgroundColor = "white";
+            button5.style.backgroundColor = "white";
+            button6.style.backgroundColor = "white";
+            
+            popPopup.src = '';
+            liqourPopup.src = '';
+            garnishPopup.src = '';
+            
+            strenghtPopup.innerHTML = 'SET YOUR PREFERENCES FIRST!';
+            
+        });
+        
+        
+        
+        
+        
+        
+        
+        //RANDOMIZERPAGE 
+
+        var drinkLink = document.getElementById('drinkLink');
+
+        drinkLink.addEventListener('click', function () {
+            randomPage.style.display = 'none';
+            randomPage.style.zIndex = '-10';
+            prefPage.style.display = 'none';
+            prefPage.style.zIndex = '-9';
+            infoPage.style.display = 'block';
+            infoPage.style.zIndex = '-8';
+            modal.style.display = 'none';
+
+        });
+
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+        function mouseDownliq() {
+            document.getElementById("liquorBut").style.backgroundColor = "#FCCE08";
+        }
+
+        function mouseUpliq() {
+            document.getElementById("liquorBut").style.backgroundColor = "white";
+        }
+
+        function mouseDowngarn() {
+            document.getElementById("garnishBut").style.backgroundColor = "#FCCE08";
+        }
+
+        function mouseUpgarn() {
+            document.getElementById("garnishBut").style.backgroundColor = "white";
+        }
+
+        function mouseDownpop() {
+            document.getElementById("popBut").style.backgroundColor = "#FCCE08";
+        }
+
+        function mouseUppop() {
+            document.getElementById("popBut").style.backgroundColor = "white";
+        }
+
+        function mouseDownran() {
+            document.getElementById("randomBut").style.backgroundColor = "#FCCE08";
+        }
+
+        function mouseUpran() {
+            document.getElementById("randomBut").style.backgroundColor = "white";
+        }
+
+
+        var popbut = document.getElementById("popBut");
+        var garnishbut = document.getElementById("garnishBut");
+        var liquorbut = document.getElementById("liquorBut");
+        var randomizer = document.getElementById("randomBut");
+        var randimg = document.getElementById("liquorImg");
+        var drinkimages = ["scoth.svg", "tequila.svg", "vodka.svg", "gin.svg", "rum.svg", "whisky.svg"];
+
+        randomizer.addEventListener("click", function () {
+
+            var randNum = Math.floor(Math.random() * drinkimages.length) + 0
+
+            randimg.src = drinkimages[randNum];
+
+        });
+        var randomizer = document.getElementById("randomBut");
+        var randimg2 = document.getElementById("garnishImg");
+        var garnimages = ["lime.svg", "orange.svg", "lemon.svg"];
+
+        randomizer.addEventListener("click", function () {
+            var randNum = Math.floor(Math.random() * garnimages.length) + 0
+
+            randimg2.src = garnimages[randNum];
+        });
+
+        var randomizer = document.getElementById("randomBut");
+        var randimg3 = document.getElementById("popImg");
+        var popimages = ["coke.svg", "sprite.svg", "tonic.svg", "sodawater.svg", "gingerale.svg"];
+
+        randomizer.addEventListener("click", function () {
+            var randNum = Math.floor(Math.random() * popimages.length) + 0
+
+            randimg3.src = popimages[randNum];
+        });
+
+
+        liquorbut.addEventListener("click", function () {
+
+            var randNum = Math.floor(Math.random() * drinkimages.length) + 0
+
+            randimg.src = drinkimages[randNum];
+
+        });
+
+        garnishbut.addEventListener("click", function () {
+
+            var randNum = Math.floor(Math.random() * garnimages.length) + 0
+
+            randimg2.src = garnimages[randNum];
+
+        });
+
+
+        popbut.addEventListener("click", function () {
+
+            var randNum = Math.floor(Math.random() * popimages.length) + 0
+
+            randimg3.src = popimages[randNum];
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>
